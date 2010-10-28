@@ -7,7 +7,7 @@ from models import Message
 
 @app.route('/messages')
 def messages():
-    messages = list(Message.all())#.filter('seen', False))
+    messages = list(Message.all().filter('seen', False))
     for m in messages:
         m.seen = True
         m.save()
