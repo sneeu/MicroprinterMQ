@@ -1,6 +1,10 @@
 MicroprinterMQ
 ==============
 
+A [Google App Engine][gae] application for storing messages to be pulled by my [Arduino Microprinter][microprinter].
+
+I wouldn't use this without adding some sort of password protection, to avoid your microprinter being spammed.
+
 This project requires [Flask][flask] in the project directory:
 
     wget -q -O - http://github.com/mitsuhiko/flask/tarball/0.6 | tar xz
@@ -17,7 +21,7 @@ This project requires [Flask][flask] in the project directory:
 
     rm -rf mitsuhiko-flask-5cadd9d Werkzeug-0.6.2 Jinja2-2.5 simplejson-2.1.1
 
+
+[gae]: http://code.google.com/appengine/
+[microprinter]: http://sneeu.com/projects/
 [flask]: http://flask.pocoo.org/
-
-
-I wouldn't use this without adding some sort of password protection, to avoid your microprinter being spammed.
